@@ -29,6 +29,8 @@ void EasyMesh::parse(int argc, char *argv[], Options * options)
       {if(strcmp(argv[arg2],"D") ==0) {options->epsDel=ON; arg++;}
        if(strcmp(argv[arg2],"V") ==0) {options->epsVor=ON; arg++;}}}
    else if(strcmp(argv[arg],"+example")==0) options->exa=ON;
+   else if(strcmp(argv[arg],"+tec")    ==0) options->tec=ON;
+   else if(strcmp(argv[arg],"+vtk")    ==0) options->vtk=ON;
    else if(strcmp(argv[arg],"-r")      ==0) options->r=OFF;
    else if(strcmp(argv[arg],"-s")      ==0) options->s=OFF;
    else if(strcmp(argv[arg],"-m")      ==0) options->m=OFF;

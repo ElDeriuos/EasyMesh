@@ -18,11 +18,14 @@ class Options {
  public:
    Options() {d=ON, ins=ON, r=ON, s=ON,
               eps=OFF, epsDel=OFF, epsVor=OFF, 
-              m=ON, exa=OFF;}
+              m=ON, exa=OFF,
+              tec=OFF, vtk=OFF;}
 
    int d, ins, r, s;
    int eps, epsDel, epsVor;
    int m, exa;
+   int tec;   /* create TecPlot ASCII output (+tec)  */
+   int vtk;   /* create ParaView VTK output  (+vtk)  */
 };
 
 #endif

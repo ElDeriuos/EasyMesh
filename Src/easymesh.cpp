@@ -95,6 +95,20 @@ int EasyMesh::algor(int argc, char *argv[])
 
  save();
 
+ if(options.tec==ON)
+  {
+   save_tec();
+   if(options.m==ON)
+     printf("TecPlot output file created !\n");
+  }
+
+ if(options.vtk==ON)
+  {
+   save_vtk();
+   if(options.m==ON)
+     printf("ParaView VTK output file created !\n");
+  }
+
  if(options.eps==ON) 
    draw_file(options.eps, options.epsDel, options.epsVor);
 

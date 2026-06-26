@@ -93,7 +93,7 @@ int EasyMesh::save()
  
  fprintf(out, "%d\n", r_Nn);
  for(n=0; n<r_Nn; n++)
-   fprintf(out, "%4d:  %18.15e %18.15e  %d\n",
+   fprintf(out, "%4d  %18.15e %18.15e  %d\n",
 		 n,
 		 r_node[n].x, r_node[n].y, r_node[n].mark);
  fprintf(out, "----------------------------------------------------------\n");
@@ -114,7 +114,7 @@ int EasyMesh::save()
 
  fprintf(out, "%d\n", r_Ne);
  for(e=0; e<r_Ne; e++)
-   fprintf(out, "%4d: %4d %4d %4d  %4d %4d %4d  %4d %4d %4d  %18.15e %18.15e  %4d\n",
+   fprintf(out, "%4d  %4d %4d %4d  %4d %4d %4d  %4d %4d %4d  %18.15e %18.15e  %4d\n",
 		 e,
 		 r_elem[e].i,  r_elem[e].j,  r_elem[e].k,
 		 r_elem[e].ei, r_elem[e].ej, r_elem[e].ek,
@@ -140,7 +140,7 @@ int EasyMesh::save()
  
  fprintf(out, "%d\n", r_Ns);
  for(s=0; s<r_Ns; s++)
-   fprintf(out, "%4d:  %4d %4d %4d %4d  %d\n",
+   fprintf(out, "%4d  %4d %4d %4d %4d  %d\n",
 		 s, 
 		 r_side[s].c,  r_side[s].d,
 		 r_side[s].ea, r_side[s].eb, 

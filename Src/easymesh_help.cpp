@@ -34,6 +34,8 @@ void EasyMesh::help(const char * name)
   printf("\n   -r          without mesh relaxation");
   printf("\n   -s          without Laplacian smoothing");
   printf("\n   +eps [D,V]  create drawing in eps format");
+  printf("\n   +tec        create TecPlot ASCII output (NAME.dat)");
+  printf("\n   +vtk        create ParaView VTK legacy ASCII output (NAME.vtk)");
   printf("\n   +example    create example input files and exit");
   printf("\n\nNote 1: After +a option, you should specify the agressivity");
   printf("\n        level which is an integer value from 0 to 6. The more");
@@ -67,6 +69,9 @@ void EasyMesh::help(const char * name)
   printf("\n  NAME.n");
   printf("\n  NAME.e");
   printf("\n  NAME.s");
+  printf("\n\nOptional output files:");
+  printf("\n  NAME.dat  (TecPlot ASCII, created with +tec option)");
+  printf("\n  NAME.vtk  (ParaView VTK legacy ASCII, created with +vtk option)");
   printf("\n\nNode file (NAME.n) has the following format:");
   printf("\n  first line:         <Nn>");
   printf("\n  following Nn lines: <node:> <x> <y> <marker> ");

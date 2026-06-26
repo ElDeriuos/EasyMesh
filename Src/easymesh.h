@@ -73,6 +73,8 @@ class EasyMesh {
     int diamond();
     int bowyer(int n);
     int save();
+    int save_tec();
+    int save_vtk();
     void help(const char *);
     void examples();
     real area(const Node *na, const Node *nb, const Node *nc);
